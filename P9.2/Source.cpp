@@ -1,9 +1,4 @@
 /*Integer sort check - Collin Snider*/
-/*Write array functions that carry out the following tasks for a passed array of integers:
-• isSortedIncreasing: Returns true if the array is currently sorted in increasing order.
-• isSortedDecreasing: Returns true if the array is currently sorted in decreasing order.
-• hasAdjecentDuplicates: Returns true if the array contains two adjacent duplicate values.
-• hasDuplicates: Returns true if the array contains duplicate values (which need not be adjacent).*/
 
 #include <iostream>
 using namespace std;
