@@ -9,10 +9,20 @@
 using namespace std;
 
 bool isSortedIncreasing(int arr[], int size);
+bool isSortedDecreasing(int arr[], int size);
 
 bool isSortedIncreasing(int arr[], int size) {
 	for (int i = 0; i < size - 1; i++) {
 		if (arr[i] > arr[i + 1]) {
+			return false;
+		}
+	}
+	return true;
+}
+
+bool isSortedDecreasing(int arr[], int size) {
+	for (int i = 0; i < size - 1; i++) {
+		if (arr[i] < arr[i + 1]) {
 			return false;
 		}
 	}
@@ -35,6 +45,13 @@ int main() {
 	}
 	else {
 		cout << "The data are not increasing." << endl;
+	}
+
+	if (isSortedDecreasing(arr, size)) {
+		cout << "The data are decreasing." << endl;
+	}
+	else {
+		cout << "The data are not decreasing." << endl;
 	}
 
 
